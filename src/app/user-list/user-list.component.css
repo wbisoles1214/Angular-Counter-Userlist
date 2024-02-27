@@ -1,0 +1,42 @@
+.user-list {
+  padding: 2rem;
+  background-color: white;
+  border-radius: 5px;
+  margin: 2rem;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+button {
+  margin: 0 10px;
+  background-color: #ff5733;
+  color: gainsboro;
+  padding: 0.55rem;
+  border-color: black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  color: black;
+  border: 2px solid;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+  color: #181818;
+}
+
+img {
+  max-width: 50px;
+  max-height: 50px;
+}

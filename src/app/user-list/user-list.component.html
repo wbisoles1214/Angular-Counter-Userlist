@@ -1,0 +1,35 @@
+<div class="user-list">
+  <h2>User List</h2>
+
+
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+  <button (click)="filterUsers('all')" [disabled]="showAll">Show All</button>
+  <button (click)="filterUsers('male')">Show Males</button>
+  <button (click)="filterUsers('female')">Show Females</button>
+
+  <table *ngIf="!errorMessage && filteredUsers && filteredUsers.length > 0"> 
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Age</th>
+        <th>Birthdate</th>
+        <th>Gender</th>
+        <th>Image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of filteredUsers">
+        <td>{{ user.id }}</td>
+        <td>{{ user.firstName }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.age }}</td>
+        <td>{{ user.birthDate }}</td>
+        <td>{{ user.gender }}</td>
+        <td><img [src]="user.image" alt="User Image"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

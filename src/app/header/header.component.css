@@ -1,0 +1,24 @@
+.header {
+  background-color: #ff5733;
+  padding: 1.5rem 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header a.active-link {
+  color: #010507;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #110202;
+}
